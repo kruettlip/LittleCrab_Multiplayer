@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CrabWorld()
+comment0.text=\r\n\ Erstellt\ die\ Welt\ (in\ unserem\ Beispiel\ den\ Strand).\ Unsere\ Welt\ hat\ eine\ Gr\u00F6sse\ von\r\n\ 560x560\ Zellen,\ wobei\ jeder\ Zelle\ 1\ Pixel\ gross\ ist.\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=amount
+comment2.target=void\ counter(int)
+comment3.params=
+comment3.target=void\ populateWorld()
+numComments=4

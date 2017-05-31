@@ -1,0 +1,38 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
+
+/**
+ * Hummer
+ * 
+ * Version: 2
+ */
+
+public class Lobster extends Animal
+{
+    /**
+     * Act Methode
+     */
+    public void act()
+    {
+
+    }
+    
+    public void randomTurn()
+    {
+        
+    }
+    
+    public void turnAtEdge()
+    {
+        
+    }
+    
+    public void lookForCrab()
+    { 
+
+    }
+    
+    public void checkKeypress()
+    {
+
+    }
+}

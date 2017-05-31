@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\r\n\ Hier\ werden\ die\ Methoden\ aufgerufen.\r\n
+comment1.params=
+comment1.target=void\ randomTurn()
+comment1.text=\r\n\ Hier\ wird\ das\ zuf\u00E4llige\ Drehen\ bestimmt.\r\n
+comment2.params=
+comment2.target=void\ turnAtEdge()
+comment2.text=\r\n\ Hier\ wird\ definiert,\ dass\ sich\ der\ Lobster\ an\ der\ Wand\ dreht.\r\n
+comment3.params=
+comment3.target=void\ lookForCrab()
+comment3.text=\r\n\ Hier\ wird\ definiert,\ dass\ der\ Lobster\ den\ Crab\ isst\ und\ danach\ das\ Spiel\ fertig\ ist.\r\n
+comment4.params=
+comment4.target=void\ checkKeypress()
+numComments=5

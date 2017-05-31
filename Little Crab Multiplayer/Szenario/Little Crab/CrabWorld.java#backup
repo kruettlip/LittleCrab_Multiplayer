@@ -1,0 +1,30 @@
+import greenfoot.*;  // imports Actor, World, Greenfoot, GreenfootImage
+
+import java.util.Random;
+import java.awt.Color;
+
+public class CrabWorld extends World
+{
+    
+    /**
+     * Erstellt die Welt (in unserem Beispiel den Strand). Unsere Welt hat eine Grösse von
+     * 560x560 Zellen, wobei jeder Zelle 1 Pixel gross ist.
+     */
+    public CrabWorld() 
+    {
+        super(600,600,1);
+        populateWorld();
+    }
+    
+    public void act() {
+        
+    }
+    
+    public void counter() {
+        
+    }
+    
+    public void populateWorld() {
+        
+    }
+}

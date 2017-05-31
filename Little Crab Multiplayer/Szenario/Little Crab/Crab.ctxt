@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\r\n\ Hier\ werden\ die\ Methoden\ aufgerufen.\r\n
+comment1.params=leftKey\ rightKey
+comment1.target=Crab(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Hier\ wird\ der\ Konstruktor\ mit\ den\ Bildern\ verbunden,\ um\ die\ Animation\ zu\ erstellen.\r\n
+comment2.params=
+comment2.target=void\ checkKeypress()
+comment2.text=\r\n\ Hier\ wird\ die\ Steuerung\ via\ Linke\ und\ Rechte\ Pfeiltaste\ definiert.\r\n
+comment3.params=
+comment3.target=void\ lookForWorm()
+comment3.text=\r\n\ Hier\ wird\ definiert,\ dass\ die\ Krabe\ die\ W\u00FCrmer\ frisst,\ wenn\ sie\ dr\u00FCber\ l\u00E4uft.\r\n
+comment4.params=
+comment4.target=void\ randomTurn()
+comment4.text=\r\n\ Hier\ wird\ definiert,\ dass\ sich\ die\ Krabbe\ zuf\u00E4llig\ dreht.\r\n
+comment5.params=
+comment5.target=void\ turnAtEdge()
+comment5.text=\r\n\ Hier\ sehen\ sie,\ dass\ die\ Krabbe\ sich\ an\ der\ Wand\ dreht.\r\n
+comment6.params=
+comment6.target=void\ switchImage()
+comment6.text=\r\n\ Hier\ wird\ definiert,\ dass\ sich\ die\ Bilder\ der\ Krabbe\ abwechseln.\r\n
+numComments=7

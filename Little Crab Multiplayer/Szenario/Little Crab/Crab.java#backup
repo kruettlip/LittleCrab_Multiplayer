@@ -1,0 +1,44 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
+
+/**
+ * Krabbe
+ */
+
+// Erbt von der Klasse Animal
+public class Crab extends Animal
+{    
+    public void act()
+    {
+        
+    }
+    
+    public Crab()
+    {
+
+    }
+    
+    public void checkKeypress()
+    {
+
+    }
+    
+    public void lookForWorm()
+    { 
+
+    }
+    
+    public void randomTurn() 
+    {
+
+    }
+    
+    public void turnAtEdge()
+    {
+
+    }
+    
+    public void switchImage()
+    {
+
+    }
+}

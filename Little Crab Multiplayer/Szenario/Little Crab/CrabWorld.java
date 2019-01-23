@@ -11,7 +11,7 @@ public class CrabWorld extends World
     Text_Looser text_looser = new Text_Looser();
 
     /**
-     * Erstellt die Welt (in unserem Beispiel den Strand). Unsere Welt hat eine Grösse von
+     * Erstellt die Welt (in unserem Beispiel den Strand). Unsere Welt hat eine Grï¿½sse von
      * 560x560 Zellen, wobei jeder Zelle 1 Pixel gross ist.
      */
     public CrabWorld() 
@@ -22,48 +22,31 @@ public class CrabWorld extends World
 
     public void act() 
     {
-        if(Greenfoot.getRandomNumber(100) < 1) 
-        {
+        if(Greenfoot.getRandomNumber(100) < 1)
             addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-        }
-        }
+    }
 
-        public void counter(int amount)
+    public void counter(int amount)
+    {
+        counter.add(amount);
+        switch(counter.getScore())
         {
-            counter.add(amount);
-        if (counter.getScore() == 30)
-        {
-            addObject(new Lobster(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
+            case 30: addObject(new Lobster(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540)); break;
+            case 60: addObject(new Lobster(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540)); break;
+            case 150: addObject(new Lobster(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540)); break;
+            case 180: addObject(new Text_Winner(), Greenfoot.getRandomNumber(300), Greenfoot.getRandomNumber(300)); break;
+            default: break;
         }
-        if (counter.getScore() == 60)
-        {
-            addObject(new Lobster(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-        }
-        if (counter.getScore() == 150)
-        {
-            addObject(new Lobster(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-        }
-        if (counter.getScore() == 180)
-        {
-            addObject(new Text_Winner(), Greenfoot.getRandomNumber(300), Greenfoot.getRandomNumber(300));
-        }
-        }
+    }
 
         public void populateWorld() {
             addObject(new Crab("left", "right"), Greenfoot.getRandomNumber(640), Greenfoot.getRandomNumber(640));
             addObject(new Crab("a", "d"), Greenfoot.getRandomNumber(340), Greenfoot.getRandomNumber(340));
             addObject(new Lobster(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
-            addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
+            for(int i = 0; i < 11; i++)
+            {
+                addObject(new Worm(), Greenfoot.getRandomNumber(540), Greenfoot.getRandomNumber(540));
+            }
             addObject(counter, 100, 540);
             addObject(text_winner, 330, 300);
             addObject(text_looser, 330, 300);

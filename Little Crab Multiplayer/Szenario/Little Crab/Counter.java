@@ -23,7 +23,7 @@ public class Counter extends Actor
     
     public void add(int amount)
     {
-        score = score + amount;
+        score += amount;
         if(score >= 180)
         {
             CrabWorld crabworld = (CrabWorld) getWorld();

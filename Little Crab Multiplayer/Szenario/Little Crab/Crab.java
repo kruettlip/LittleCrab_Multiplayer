@@ -49,18 +49,13 @@ public class Crab extends Animal
     public void checkKeypress()
     {
         if (Greenfoot.isKeyDown(leftKey))
-        {
             turn(-4);
-        }
-
-        if (Greenfoot.isKeyDown(rightKey))
-        {
+        else if (Greenfoot.isKeyDown(rightKey))
             turn(4);
-        }
     }
 
     /**
-     * Hier wird definiert, dass die Krabe die Würmer frisst, wenn sie drüber läuft.
+     * Hier wird definiert, dass die Krabe die Wï¿½rmer frisst, wenn sie drï¿½ber lï¿½uft.
      */
     public void lookForWorm()
     {
@@ -70,30 +65,21 @@ public class Crab extends Animal
             wormsEaten = wormsEaten + 1;
             CrabWorld crabworld = (CrabWorld) getWorld();
 
-                
             if (wormsEaten >= 10)
-            {
                 crabworld.counter(5);
-            }
-
             if (wormsEaten == 15)
-            {
                 Greenfoot.stop();
-            }
-
             crabworld.counter(10);
         }
     }
 
     /**
-     * Hier wird definiert, dass sich die Krabbe zufällig dreht.
+     * Hier wird definiert, dass sich die Krabbe zufï¿½llig dreht.
      */
     public void randomTurn() 
     {
         if (Greenfoot.getRandomNumber(100) < 10)
-        {
             turn(Greenfoot.getRandomNumber(90)-45);
-        }
     }
 
     /**
@@ -102,9 +88,7 @@ public class Crab extends Animal
     public void turnAtEdge()
     {
         if (atWorldEdge())
-        {
             turn(17);
-        }
     }
 
     /**
@@ -113,12 +97,8 @@ public class Crab extends Animal
     public void switchImage()
     {
         if (getImage() == image1)
-        {
             setImage(image2);
-        }
         else
-        {
             setImage(image1);
-        }
     }
 }

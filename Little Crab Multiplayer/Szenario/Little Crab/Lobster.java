@@ -23,7 +23,7 @@ public class Lobster extends Animal
         lookForCrab();
     }
     /**
-     * Hier wird das zufällige Drehen bestimmt.
+     * Hier wird das zufï¿½llige Drehen bestimmt.
      */
     public void randomTurn()
     {
@@ -38,9 +38,7 @@ public class Lobster extends Animal
     public void turnAtEdge()
     {
         if (atWorldEdge())
-        {
             turn(17);
-        }
     }
     /**
      * Hier wird definiert, dass der Lobster den Crab isst und danach das Spiel fertig ist.
@@ -54,10 +52,5 @@ public class Lobster extends Animal
             crabworld.text_looser.updateImage();
             Greenfoot.stop();
         }
-    }
-    
-    public void checkKeypress()
-    {
-
     }
 }

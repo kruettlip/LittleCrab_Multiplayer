@@ -8,10 +8,18 @@ import java.awt.Font;
  */
 public class Text_Looser extends Actor
 {
+    public Text_Looser()
+    {
+        GreenfootImage image = new GreenfootImage("crab.png");
+        image.clear();
+        setImage(image);
+    }
+
     public void act() 
     {
         // Add your action code here.
     }
+    
     public void updateImage()
     {
         GreenfootImage img2 = new GreenfootImage (300, 100);
@@ -20,11 +28,5 @@ public class Text_Looser extends Actor
         img2.setColor(java.awt.Color.red);
         img2.drawString ("You Lose!", 25, 60);
         setImage (img2);
-    }
-    public Text_Looser()
-    {
-        GreenfootImage image = new GreenfootImage("crab.png");
-        image.clear();
-        setImage(image);
     }
 }
